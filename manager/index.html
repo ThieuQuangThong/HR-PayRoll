@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="glassmor.css">
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                </li>
+                <li class="progress-bar">
+                    <div class="progress" style="padding-top: 3px;"> 80% working </div>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-bell"></i></span>
+                    <span><i class="fa-solid fa-user-gear"></i></span>
+                </li>
+            </ul>
+        </div>
+        <div style="text-align: center; margin-top: 20px;margin-bottom: 20px;">
+            <h3>EMPLOYEE</h3>
+            <div class="content">
+                <div class="item-content">
+                    <div class="schedule">
+                        <!-- celender -->
+                        <div class="calender">
+                            <section>
+                                <!-- <div class="box"> -->
+                                <!-- <div class="container"> -->
+                                <div id="calendar">
+
+                                </div>
+
+                                <!-- </div> -->
+                                <!-- </div> -->
+
+                            </section>
+
+                            <script src="calendar.js"></script>
+                            <script>
+                                dycalendar.draw({
+                                    target: '#calendar',
+                                    type: 'month',
+                                    dayformat: 'full',
+                                    monthformat: 'full',
+                                    highlighttargetdate: true,
+                                    prevnextbutton: 'show'
+
+                                })
+                            </script>
+                            <script>
+                                    (function (i, s, o, g, r, a, m) {
+                                        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                                            (i[r].q = i[r].q || []).push(arguments)
+                                        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                                            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                                    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                                ga('create', 'UA-46156385-1', 'cssscript.com');
+                                ga('send', 'pageview');
+
+                            </script>
+                        </div>
+
+
+                        <div class="event">
+                            <h5>EVENT</h5>
+                            <ul>
+                                <li>
+                                    <p style="background-color: aqua;">31/02</p>
+                                    <p>Thông's birthday</p>
+                                </li>
+                                <li>
+                                    <p style="background-color: aqua;">30/02</p>
+                                    <p>Thông's birthday</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wholesales">
+                        <h3>868 Employee</h3>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">
+                                MALE
+                            </div>
+
+                            <div class="progress-bar progress-bar-danger   " role="progressbar" style="width:20%">
+                                FEMALE
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="https://s3-alpha-sig.figma.com/img/8869/b44f/50d7df01aebe68c9bb34347c5ec99d65?Expires=1650844800&Signature=b3q0LXFzQIIJJYX9FGxdn0O1BwdIudyAx0-bWUa9MjogZzDANyjMrcMfb4UgO938v28ncjHnxBaUPt8s4SejJoPNFIvonLYCYypZUXz82FK7tc7pHVR~2hvXNRl2qD~WnnsXshRRiN-ltjMRQfoITIA4gWD9HxcJ6kqLOpQ5RgwNrpIjL~eIgzic53V3kQzvTmTfWDDmCoe6Akkk9JC3flo0Nx8h-q54EsRqQddp~owd5zTbID1wsFcZaAmGXKdSp8HJEVxTar0cQppWPgml5FXJOHjDaTTOwWAeAS~XXY9hxe4YE5xWcidscT7kLX7SxWnVw2Tx3z4KCQBFTZ8wFA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                alt="">
+
+                            <div>
+                                <p style="display:inline-block;margin-right: 60px;color: #4bcbe7;">573</p>
+                                <p style="display:inline-block;color: #e74ba8;">295</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tableinfo">
+                    <table border="1">
+                        <tr class="tr_1">
+                            <td class="loyeeid">EMPLOYEEID</td>
+                            <td class="lname">EMPLNAME</td>
+                            <td class="fname">EMPFNAME</td>
+                            <td class="title">EMPTITLE</td>
+                            <td class="stratd">EMPSTARTD</td>
+                            <td class="branci">EMPBRANCI</td>
+                            <td class="salary">EMPSALARY</td>
+                            <td class="supervisor">EMPSUPERVISOR</td>
+                        </tr>
+                        <tr>
+                            <td class="loyeeid">e1</td>
+                            <td class="lname">Adam</td>
+                            <td class="fname">Alan</td>
+                            <td class="title">CEO</td>
+                            <td class="stratd">11/01/2002</td>
+                            <td class="branci">b1</td>
+                            <td class="salary">600000</td>
+                            <td class="supervisor">-</td>
+                        </tr>
+                        <tr class="tr_2">
+                            <td class="loyeeid">e10</td>
+                            <td class="lname">Jerome</td>
+                            <td class="fname">John</td>
+                            <td class="title">salesperson</td>
+                            <td class="stratd">25/08/2002</td>
+                            <td class="branci">b4</td>
+                            <td class="salary">75000</td>
+                            <td class="supervisor">e4</td>
+                        </tr>
+                        <tr>
+                            <td class="loyeeid">e2</td>
+                            <td class="lname">Bryson</td>
+                            <td class="fname">Brad</td>
+                            <td class="title">Branh_manager</td>
+                            <td class="stratd">01/02/2003</td>
+                            <td class="branci">b2</td>
+                            <td class="salary">400000</td>
+                            <td class="supervisor">e1</td>
+                        </tr>
+                        <tr class="tr_2">
+                            <td class="loyeeid">e3</td>
+                            <td class="lname">Clay</td>
+                            <td class="fname">Cedric</td>
+                            <td class="title">brand_manager</td>
+                            <td class="stratd">21/06/2001</td>
+                            <td class="branci">b3</td>
+                            <td class="salary">450000</td>
+                            <td class="supervisor">e1</td>
+                        </tr>
+                        <tr>
+                            <td class="loyeeid">e4</td>
+                            <td class="lname">Day</td>
+                            <td class="fname">Daisy</td>
+                            <td class="title">brand_manager</td>
+                            <td class="stratd">17/08/2003</td>
+                            <td class="branci">b4</td>
+                            <td class="salary">480000</td>
+                            <td class="supervisor">e1</td>
+                        </tr>
+                        <tr class="tr_2">
+                            <td class="loyeeid">e5</td>
+                            <td class="lname">Engle</td>
+                            <td class="fname">Eva</td>
+
+                            <td class="title">salesperson</td>
+                            <td class="stratd">01/01/2004</td>
+                            <td class="branci">b2</td>
+                            <td class="salary">120000</td>
+                            <td class="supervisor">e2</td>
+                        </tr>
+                        <tr>
+                            <td class="loyeeid">e6</td>
+                            <td class="lname">Falcon</td>
+                            <td class="fname">Fred</td>
+                            <td class="title">salesperson</td>
+                            <td class="stratd">01/01/2002</td>
+                            <td class="branci">b2</td>
+                            <td class="salary">80000</td>
+                            <td class="supervisor">e2</td>
+                        </tr>
+                        <tr class="tr_2">
+                            <td class="loyeeid">e7</td>
+                            <td class="lname">Gandhi</td>
+                            <td class="fname">Gagan</td>
+                            <td class="title">salesperson</td>
+                            <td class="stratd">01/01/2003</td>
+                            <td class="branci">b3</td>
+                            <td class="salary">90000</td>
+                            <td class="supervisor">e3</td>
+                        </tr>
+                        <tr>
+                            <td class="loyeeid">e8</td>
+                            <td class="lname">Hee</td>
+                            <td class="fname">Hwang</td>
+                            <td class="title">salesperson</td>
+                            <td class="stratd">01/06/2004</td>
+                            <td class="branci">b3</td>
+                            <td class="salary">95000</td>
+                            <td class="supervisor">e3</td>
+                        </tr>
+                        <tr class="tr_2">
+                            <td class="loyeeid">e9</td>
+                            <td class="lname">Ingram</td>
+                            <td class="fname">Irene</td>
+                            <td class="title">salesperson</td>
+                            <td class="stratd">24/09/2002</td>
+                            <td class="branci">b4</td>
+                            <td class="salary">110000</td>
+                            <td class="supervisor">e4</td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
