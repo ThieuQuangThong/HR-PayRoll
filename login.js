@@ -10,4 +10,7 @@ function validate() {
             alert("Mật khẩu ít nhất 6 ký tự");
             return false;
         }
+        else{
+            return false
+        };
     }
